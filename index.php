@@ -1,0 +1,88 @@
+<?php
+    phpinfo();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PickAppSong</title>
+    <script type="text/javascript" charset="utf-8" src="www/js/cordova/cordova.js"></script>
+		<link rel="stylesheet" href="www/css/jquery.mobile-1.4.5.min.css"/> <!--http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css-->
+		<link rel="stylesheet" href="www/css/style.css"/>
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script src="www/js/myjs.js"></script>
+</head>
+<body>
+	<div data-url="demo-page" data-role="page" id="demo-page">
+	    <div data-role="header" data-theme="b">
+	    	<!--put app logo in here instead of h1 tag (middle of top navbar)-->
+	       <h1>logo here</h1> 
+	        <a href="#left-panel" data-icon="carat-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon">Open left panel</a>
+	    </div><!-- /header -->
+	    
+	    <div role="main" class="ui-content jqm-content jqm-fullwidth">
+		    <div id="main-content" class="custom-font center_elem" style="text-align: center;">
+		    	<h2>pickApp Line</h2>
+		    	<h3>try your luck with creative pickup lines</h3>
+		    	<br><br>
+		    	<a href="#page2" style="font-size: 2em;text-decoration: underline;color:#ff007f;">Click here to start </a>
+		    </div>
+		</div> <!--div roel="main"-->	
+		 <footer data-role="footer"><h4>&copy; 2015 PickAppLine</h4></footer>   
+	    <div data-role="panel" id="left-panel" data-theme="b" style="background-color: #ff007f;" >
+	        <ul data-role="listview">
+	        	<li style="background-color: #ff007f;height:20px;font-weight: bold;">Menu</li>
+	        	<li><a  href="#page2">about</a></li>
+	        	<li><a href="#page2">favourite lines</a></li>
+	        	<li><a href="#page2">connect with facebook</a></li>
+	        	<li><a href="#page2">random line</a></li>
+	        	<li><a href="#page2">see all lines(unsorted)</a></li>
+	        </ul>
+	    </div><!-- /panel -->
+
+	</div>
+	
+	<!--SECOND PAGE-->
+	<div id="page2" data-role="page" data-url="second-page">
+		<div data-role="header" data-theme="b">
+	    	<!--put app logo in here instead of h1 tag (middle of top navbar)-->
+	       <h1>logo here</h1> 
+	        <a href="#demo-page" data-icon="carat-l" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon">Open left panel</a>
+	    </div><!-- /header -->
+	     <div role="main" class="ui-content jqm-content jqm-fullwidth">
+		    <div id="main-content" class="custom-font center_elem" style="text-align: center;">
+		    	<h2 style="text-decoration: underline;">Choose Category</h2
+		    	<br>
+		    	<a href="#page3" class="ui-btn">Club lines</a>
+		    	<a href="#page3" class="ui-btn">Pub lines</a>
+		    	<a href="#page3" class="ui-btn">Street lines</a>
+		    	<a href="#page3" class="ui-btn">First date lines</a>
+		    	<a href="#page3" class="ui-btn">random events lines</a>
+		    </div>
+		</div> <!--div roel="main"-->	
+		 <footer data-role="footer"><h4>&copy; 2015 PickAppLine</h4></footer>   
+	</div>
+	
+	<!--THIRD PAGE-->
+	<div id="page3" data-role="page" data-url="third-page">
+		<div data-role="header" data-theme="b">
+	    	<!--put app logo in here instead of h1 tag (middle of top navbar)-->
+	       <h1>logo here</h1> 
+	        <a href="#page2" data-icon="carat-l" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon">Open left panel</a>
+	    </div><!-- /header -->
+	     <div role="main" class="ui-content jqm-content jqm-fullwidth">
+	     	<div id="main-content" class="custom-font center_elem" style="text-align: center;">
+	     		<div class="container-box"></div>
+	     		<div class="hidden-box"></div>
+	     		<div class="hidden-box"></div>
+	     		
+	     	</div>
+	     </div> <!--div roel="main"-->
+	     <footer data-role="footer"><h4>&copy; 2015 PickAppLine</h4></footer>   	
+	</div>
+	
+</body>
+
+</html>

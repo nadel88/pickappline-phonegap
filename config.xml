@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+	xmlns:gap = "http://phonegap.com/ns/1.0"
+	id        = "com.nadaveliyahu.pickappline"
+	versionCode="1"
+	version   = "1.0">
+	
+<name>PickAppLine</name>
+
+<description> pickup lines delivered to you in an interactive fun way .
+	swip right to like and save a pickup line or swipe left to dislike it.
+	find your significant other with your favorit pickup lines.
+</description>
+
+<author href="nadaveliyahu.bugs3.com/pickappline" 
+email="supportpickappline@nadaveliyahu.bugs3.com">
+Nadav Eliyahu
+</author>
+
+<!--TARGET PLATFORMS-->
+<gap:platform name="ios" />
+<gap:platform name="android" />
+<gap:platform name="winphone" />
+
+
+
+<!--SPLASH SCREEN-->
+<gap:splash src="splash.png" />
+
+<!--ANDROID-->
+<platform name="android">
+    <splash src="res/splash/android/splash-hdpi.png" density="port-hdpi"/>
+    <splash src="res/screen/android/splash-ldpi.png" density="port-ldpi"/>
+    <splash src="res/screen/android/splash-mdpi.png" density="port-mdpi"/>
+    <splash src="res/screen/android/splash-xhdpi.png" density="port-xhdpi"/>
+</platform>
+
+
+<!--PREFRENCES-->
+<preference name="phonegap-version" value="3.3.0" />
+<preference name="orientation" value="portrait" />
+<preference name="fullscreen" value="false" />
+<preference name="webviewbounce" value="false" />
+<preference name="DisallowOverscroll" value="true"/>
+<preference name="disallowOverscroll" value="true" />
+<preference name="exit-on-suspend" value="false" />
+<!--<preference name="prerendered-icon" value="false" />-->
+<preference name="android-minSdkVersion" value="14" />
+<preference name="android-installLocation" value="auto" />
+<preference name="KeepRunning" value="true"/>
+
+<!--PERMISSIONS TO USE SERVICES-->
+<feature name="http://api.phonegap.com/1.0/geolocation"/>
+<feature name="http://api.phonegap.com/1.0/network"/>
+
+<!--PLUGINS-->
+<gap:plugin name="org.apache.cordova.geolocation" />
+<gap:plugin name="org.apache.cordova.dialogs"  />
+<gap:plugin name="org.apache.cordova.device" />
+<gap:plugin name="org.apache.cordova.network-information" />
+<gap:plugin name="org.apache.cordova.console" />
+<gap:plugin name="org.apache.cordova.inappbrowser"  />
+<gap:plugin name="org.apache.cordova.network-information" />
+<gap:plugin name="org.apache.cordova.splashscreen" />
+
+<!--QR SCANNER PLUGIN
+<gap:plugin name="com.phonegap.plugins.barcodescanner" />-->
+
+<!--ALLOW ACCESS TO APPROVED DOMAINS / ONLINE SERVICESS TO BE USED WITHIN THE APPLICATION-->
+<access origin="*" subdomains="true" />
+
+</widget>
+
+
+
+
+
+

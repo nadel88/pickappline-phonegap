@@ -1,0 +1,25 @@
+.container-box
+{
+	width:150px;
+	height:150px;
+	background-color:#ff007f;
+	margin-left: auto ;
+    margin-right: auto ;
+    margin-top:50%;
+    
+}
+
+.hidden-box{
+	width:150px;
+	height:150px;
+	background-color:#ff007f;
+	margin-left: -200px;
+    margin-right: auto ;
+    margin-top:-45%;
+    position:absolute;
+    
+}
+
+div.container-box.swipe{
+	 margin-left:150%;
+}
